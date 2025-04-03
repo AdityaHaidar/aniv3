@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Halaman pertama dengan tombol Click Me -->
+        <div id="initial-screen" class="screen active">
+            <div id="click-object">Click Me</div>
+        </div>
+
+        <!-- Halaman password -->
+        <div id="password-screen" class="screen">
+            <div class="password-container">
+                <h2>Masukkan Password</h2>
+                <p>Masukkan 4 digit angka untuk melanjutkan</p>
+                <input type="password" id="password-input" maxlength="4" inputmode="numeric" pattern="[0-9]*">
+                <button id="submit-password">Submit</button>
+                <p id="password-error" class="error-message"></p>
+            </div>
+        </div>
+
+        <!-- Halaman quiz -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-container">
+                <h2>Quiz Anniversary</h2>
+                <p>Jawab pertanyaan berikut dengan benar ya!</p>
+                
+                <div class="quiz-question" id="question-1">
+                    <h3>Pertanyaan 1:</h3>
+                    <p>Apa nama tempat first date kita?</p>
+                    <input type="text" class="quiz-input" id="answer-1" placeholder="Ketik jawabanmu...">
+                </div>
+
+                <div class="quiz-question" id="question-2" style="display: none;">
+                    <h3>Pertanyaan 2:</h3>
+                    <p>Dimana tempat first kiss kita?</p>
+                    <input type="text" class="quiz-input" id="answer-2" placeholder="Ketik jawabanmu...">
+                </div>
+
+                <div class="quiz-question" id="question-3" style="display: none;">
+                    <h3>Pertanyaan 3:</h3>
+                    <p>Berapa anak yang Adit ingin punya?</p>
+                    <input type="number" class="quiz-input" id="answer-3" placeholder="Ketik jawabanmu...">
+                </div>
+
+                <div class="quiz-question" id="question-4" style="display: none;">
+                    <h3>Pertanyaan 4:</h3>
+                    <p>Apa urutan morning kiss?</p>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="answer-4" value="a"> 
+                            <span>a) pipi kanan, pipi kiri, kening, ngap idung, kiss brutal bibir</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="answer-4" value="b"> 
+                            <span>b) kiss nen, kiss nen lagi, kiss nenn lagiii</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="answer-4" value="c"> 
+                            <span>c) ga kiss soalnya susah bangun</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="quiz-question" id="question-5" style="display: none;">
+                    <h3>Pertanyaan 5:</h3>
+                    <p>Apa nama marga anak yang pengin kita buat?</p>
+                    <input type="text" class="quiz-input" id="answer-5" placeholder="Ketik jawabanmu...">
+                </div>
+
+                <button id="next-question" class="quiz-btn">Selanjutnya</button>
+            </div>
+        </div>
+
+        <!-- Popup hasil quiz -->
+        <div id="quiz-result" class="popup">
+            <div class="popup-content">
+                <h2>Selamat! Sayang dapet skor:</h2>
+                <div class="score">0%</div>
+                <p class="result-message"></p>
+                <button id="close-result" class="quiz-btn">Lanjut</button>
+            </div>
+        </div>
+
+        <!-- Halaman ucapan -->
+        <div id="message-screen" class="screen">
+            <div class="message-container">
+                <div class="hearts"></div>
+                <h1>Happy Anniversary Sayang!</h1>
+                
+                <!-- Space untuk foto -->
+                <div class="photo-space">
+                    <div class="photo-placeholder">
+                        <img src="pict1.jpg" alt="Pict of us" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                
+                <div class="message-content">
+                    <p>woii yangggg kita udah 3 taunn, IYAAA 3 TAHUNNN. gakerasa yaaaa, kerasa bgt si, every moment i spent with u is another level of gained new happy experienceee. </p>
+                    <p>sabarnya kamu ngadepin aku yang masi kaya anak kecilll(ril), how u talk to me when i got a bad dayy, how u treat me as ur bf is the prove that u r always loving me in any situatuon, how lucky im byyy.</p>
+                    <p>di tahun ketiga ini kita udah ngalamin banyak konflik, yang lebih banyak kalau dibanding 2 taun sebelumnya, tapi i dont knoww why, kita bisa ngelaluin itu dan jadi pribadi yang lebih saling ngerti. makasih sayang buat 3 tahunnya. ditunggu yaa hadiah specialnya buat kamuu.</p>
+                    <p class="signature">love u always cinta, </p>
+                    <p class="signature">❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
