@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Quiz answers (case insensitive for text)
     const quizAnswers = {
-        1: ["menganti", "pantai menganti"],
+        1: ["surumanis", "pantai surumanis"],
         2: ["wisdom park", "wisdompark", "wisdom-park", "wisdom"],
         3: "11",
         4: "a",
